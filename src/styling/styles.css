@@ -1,0 +1,40 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #f8f4f0; /* soft off-white */
+  color: #2c2c2c; /* dark gray for text */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+#content {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fffaf2; /* warm light cream */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  margin: 30px 0px;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+button {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s;
+  border-width: 0;
+  font-size: 1.5rem;
+  border-radius: 12px;
+  padding: 5px 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  color: #c75f3e; /* lighter warm accent */
+}
