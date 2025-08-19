@@ -1,4 +1,6 @@
-export function aboutPageContent() {
+export async function aboutPageContent() {
+  await import("../styling/about-styling.css");
+
   const content = document.getElementById("content");
 
   const header1 = document.createElement("h1");
@@ -12,7 +14,7 @@ export function aboutPageContent() {
   const header4 = document.createElement("h2");
   const para6 = document.createElement("p");
 
-  header1.textContent = "About Odin’s Table";
+  header1.textContent = "About ";
   para1.textContent =
     "Step inside and be welcomed like kin. With warm wood, glowing firelight, and the atmosphere of a great hall, Odin’s Table is the perfect place for gatherings, celebrations, and nights to remember.";
   header2.textContent = "Our Story";
@@ -27,14 +29,21 @@ export function aboutPageContent() {
   para6.textContent =
     "At Odin’s Table, we believe dining should be more than a meal—it should be an experience. Every plate is crafted with care, every guest treated with honor. Join us, and dine like a legend. We welcome adventurers, families, friends, and developers alike to our great hall. Every visit is an opportunity to celebrate good food, good company, and unforgettable memories.";
 
-  content.appendChild(header1);
-  content.appendChild(para1);
-  content.appendChild(header2);
-  content.appendChild(para2);
-  content.appendChild(header3);
-  content.appendChild(para3);
-  content.appendChild(para4);
-  content.appendChild(para5);
-  content.appendChild(header4);
-  content.appendChild(para6);
+  const wrapper = document.createElement("div");
+  wrapper.id = "about-wrapper";
+  header1.id = "about-title";
+  para4.id = "code-joke";
+
+  wrapper.appendChild(header1);
+  wrapper.appendChild(para1);
+  wrapper.appendChild(header2);
+  wrapper.appendChild(para2);
+  wrapper.appendChild(header3);
+  wrapper.appendChild(para3);
+  wrapper.appendChild(para4);
+  wrapper.appendChild(para5);
+  wrapper.appendChild(header4);
+  wrapper.appendChild(para6);
+
+  content.appendChild(wrapper);
 }

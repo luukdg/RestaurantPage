@@ -1,0 +1,29 @@
+#about-title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+#about-title::after {
+  content: "Odin's Table";
+  color: var(--beige);
+}
+
+#about-wrapper {
+  display: flex;
+  flex-direction: column;
+  font-family: "Cinzel", serif;
+  gap: 20px;
+}
+
+#about-wrapper > p:first-of-type {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--white);
+}
+
+#code-joke {
+  font-family: "Courier New", Courier, monospace;
+  color: var(--beige);
+}

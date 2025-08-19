@@ -1,40 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap");
+
+/* 1. Root variables */
+:root {
+  --header-font: "Cinzel", serif;
+  --bg: #0a1314;
+  --bg-secondary: #0f1b23;
+  --beige: #efcaa4;
+  --white: #ffffff;
+  --width: clamp(300px, 90%, 1200px);
+}
+
+/* 2. Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #f8f4f0; /* soft off-white */
-  color: #2c2c2c; /* dark gray for text */
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-}
-
-#content {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #fffaf2; /* warm light cream */
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-nav {
-  margin: 30px 0px;
+  background-color: var(--bg);
   display: flex;
-  justify-content: center;
-  gap: 0.5rem;
+  flex-direction: column;
+  align-items: center;
 }
 
+h2 {
+  color: var(--beige);
+}
+
+/* 3. Layout containers */
+#content {
+  width: var(--width);
+  margin: 0 auto;
+  padding: 30px;
+  background-color: var(--bg-secondary);
+  color: var(--white);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bg);
+  width: var(--width);
+  margin: 10px 0px;
+}
+
+/* 4. Header elements */
+header > div > img {
+  width: 100px;
+}
+
+/* 5. Navigation */
+nav {
+  display: flex;
+  gap: 0.5rem;
+  margin-right: 15px;
+}
+
+/* 6. Buttons */
 button {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #ffffff;
+  font-family: var(--header-font);
+  color: var(--white);
+  background-color: transparent;
   text-decoration: none;
   transition: color 0.2s;
   border-width: 0;
   font-size: 1.5rem;
-  border-radius: 12px;
-  padding: 5px 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 20px;
 }
 
 button:hover {
-  color: #c75f3e; /* lighter warm accent */
+  color: var(--beige);
 }

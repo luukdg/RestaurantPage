@@ -1,0 +1,59 @@
+#home-title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+#home-title::after {
+  content: "Odin's Bar";
+  color: var(--beige);
+}
+
+#home-page {
+  display: flex;
+  flex-direction: column;
+  font-family: "Cinzel", serif;
+}
+
+#home-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#home-wrapper > div:first-child {
+  flex: 2 2 500px;
+}
+
+#home-wrapper > div:last-child {
+  flex: 1 1 300px;
+}
+
+#home-wrapper > div > p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--white);
+}
+
+#home-wrapper > div > p:first-child {
+  color: var(--beige);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#home-image {
+  max-inline-size: 100%;
+  display: block;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--beige);
+}
+
+#home-wrapper > div > p {
+  margin: 10px 0px;
+  line-height: 1.5;
+  color: var(--white);
+}

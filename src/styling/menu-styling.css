@@ -1,0 +1,51 @@
+#menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Cinzel", serif;
+}
+
+#menu-wrapper > p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+#menu-title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+#menu-title::after {
+  content: "menu";
+  color: var(--beige);
+}
+
+#menu-wrapper > div {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+#menu-wrapper > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  flex: 1 1 300px;
+}
+
+#img1,
+#img2,
+#img3,
+#img4 {
+  width: 25vw;
+  max-height: 300px;
+  object-fit: cover;
+  flex: 1 1 300px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--beige);
+}
